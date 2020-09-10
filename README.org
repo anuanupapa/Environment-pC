@@ -1,10 +1,10 @@
 * Decision Making
-  *lambda* is neighbor wealth visibility.
-  *delW* is the Avg wealth of neighbors subtracted from wealth of focal player.
+  *\lambda* is neighbor wealth visibility.
+  *\delta W* is the Avg wealth of neighbors subtracted from wealth of focal player.
 ** Cooperative environment
-   p_{C} = p_{0} - b + tanh(lambda*delW)
+   p_{C} = p_{0} - b + tanh(\lambda \delta W)
 ** Defective environment
-   p_{C} = 1 - (p_{0} - b + tanh(lambda*delW))
+   p_{C} = 1 - (p_{0} - b + tanh(\lambda \delta W))
 * PGG
 **  Modified PGG
    Each cooperator donates *m* to each of her neighbors. Each player receives *r*m* from each of her cooperative neighbors. 
