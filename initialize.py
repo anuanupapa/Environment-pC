@@ -2,13 +2,11 @@ import numpy as np
 import numba as nb
 
 @nb.njit
-def init_arr(N, p_init = 0.7):
-    cumpayoff = np.zeros((N, 1))
+def init_arr(N, p_init = 0.65):
     action = np.zeros((N, 1))
     
     for ind in range(N):
         action[ind] = nb.float64(np.random.random() < p_init)
-        cumpayoff[ind] = 0.
     return action
 
 @nb.njit

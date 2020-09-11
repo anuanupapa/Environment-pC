@@ -25,6 +25,7 @@ c = 50.
 r = 2.
 lam = 0.001
 p0 = 0.7
+re = 0.3
 b = 0.1
 ini_re = 0.3
 
@@ -53,7 +54,7 @@ for it in range(trials):
         # As rewiring does not require wealth
         
         # Rewire
-        AdjMat = rewire.rewiring_process(AdjMat, actA, 0.3)
+        AdjMat = rewire.rewiring_process(AdjMat, actA, re)
 
         # Decide
         [actA, cpayA] = Record.update_iterated(pay, AdjMat, cpayA,
